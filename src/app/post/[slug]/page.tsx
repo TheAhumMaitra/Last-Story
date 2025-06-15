@@ -10,6 +10,7 @@ export async function generateStaticParams() {
   return files.map((file) => ({ slug: file.replace(/\.md$/, '') }));
 }
 
+// Use the recommended Next.js App Router signature for dynamic routes
 export default async function PostPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const filePath = path.join(process.cwd(), 'src/app/stories', `${slug}.md`);
