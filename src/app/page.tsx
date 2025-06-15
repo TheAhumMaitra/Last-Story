@@ -24,7 +24,7 @@ export default function Home() {
         setStories(data);
         setLoading(false);
       })
-      .catch((err) => {
+      .catch(() => {
         setError('Failed to load stories');
         setLoading(false);
       });
@@ -51,9 +51,9 @@ export default function Home() {
           ))}
         </div>
       </main>
-      <footer className='w-full h-full flex-col gap-2 items-center p-2 justify-around bg-red-800'>
-        <p className='text-yellow-300 font-medium italic'>This website was created on father's day , happy father's day 2025!</p>
-        <p className='text-yellow-400 font-bold'>&copy;Copyright by Ahum Maitra. All rights reserved by Ahum Maitra</p>
+      <footer className="w-full h-full flex-col gap-2 items-center p-2 justify-around bg-red-800">
+        <p className="text-yellow-300 font-medium italic">This website was created on father&apos;s day , happy father&apos;s day 2025!</p>
+        <p className="text-yellow-400 font-bold">&copy;Copyright by Ahum Maitra. All rights reserved by Ahum Maitra</p>
       </footer>
     </>
   );
