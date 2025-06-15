@@ -11,7 +11,9 @@ export async function generateStaticParams() {
 }
 
 // Use the recommended Next.js App Router signature for dynamic routes
-export default async function PostPage({ params }: { params: { slug: string } }) {
+// Remove all explicit interface/props typing and use the destructured params object
+export default function PostPage({ params }: { params: { slug: string } }) {
+  'use client'; // Ensures this runs as a client component if needed
   const { slug } = params;
   const filePath = path.join(process.cwd(), 'src/app/stories', `${slug}.md`);
   if (!fs.existsSync(filePath)) return notFound();
