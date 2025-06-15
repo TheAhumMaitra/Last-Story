@@ -1,0 +1,51 @@
+[
+  {
+    "_id": "684f0314865ac4e0a44a1d27",
+    "title": "The Whispering Library",
+    "author": "Ahum Maitra",
+    "slug": "the-whispering-library",
+    "snippet": "In a forgotten library, books whisper secrets when the moon rises... *What will you do when the books start whispering your name?*"
+  },
+  {
+    "_id": "the-red-door",
+    "title": "The Red Door",
+    "author": "Ahum Maitra",
+    "slug": "the-red-door",
+    "snippet": "A red door appears in your dreams every night. Behind it, something calls your name. You wake up sweating, heart pounding. Tonight, you decide to open it."
+  },
+  {
+    "_id": "shadows-in-the-attic",
+    "title": "Shadows in the Attic",
+    "author": "Ahum Maitra",
+    "slug": "shadows-in-the-attic",
+    "snippet": "Every night, footsteps echo above your room. No one believes you when you say the attic is haunted. You decide to investigate, flashlight in hand. The shadows move when you do."
+  },
+  {
+    "_id": "the-last-candle",
+    "title": "The Last Candle",
+    "author": "Ahum Maitra",
+    "slug": "the-last-candle",
+    "snippet": "The power is out, and you light the last candle. Its flame flickers, casting strange shapes on the wall. You hear whispers in the darkness. The candle is burning low."
+  },
+  {
+    "_id": "the-forgotten-portrait",
+    "title": "The Forgotten Portrait",
+    "author": "Ahum Maitra",
+    "slug": "the-forgotten-portrait",
+    "snippet": "A dusty portrait hangs in the hallway. Its eyes seem to follow you everywhere. You ask your family, but no one knows who it is. One night, the portrait is gone."
+  },
+  {
+    "_id": "the-clock-strikes-thirteen",
+    "title": "The Clock Strikes Thirteen",
+    "author": "Ahum Maitra",
+    "slug": "the-clock-strikes-thirteen",
+    "snippet": "Your old clock chimes thirteen times at midnight. Each night, the sound grows louder. You try to stop it, but the hands keep moving. Tonight, the clock stops—and so does your heart."
+  },
+  {
+    "_id": "the-window-in-the-cellar",
+    "title": "The Window in the Cellar",
+    "author": "Ahum Maitra",
+    "slug": "the-window-in-the-cellar",
+    "snippet": "There is a window in your cellar that looks out into darkness. Sometimes, you see eyes staring back at you. You try to board it up, but the boards fall away. Tonight, the window is open."
+  }
+]
