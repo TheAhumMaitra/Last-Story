@@ -4,16 +4,8 @@ import { notFound } from 'next/navigation';
 import path from 'path';
 import ReactMarkdown from 'react-markdown';
 
-export async function generateStaticParams() {
-  const storiesDir = path.join(process.cwd(), 'src/app/stories');
-  const files = fs.readdirSync(storiesDir);
-  return files.map((file) => ({ slug: file.replace(/\.md$/, '') }));
-}
-
-// Use the recommended Next.js App Router signature for dynamic routes
-// Remove all explicit interface/props typing and use the destructured params object
+// Remove generateStaticParams and use the correct signature for Next.js App Router
 export default function PostPage({ params }: { params: { slug: string } }) {
-  'use client'; // Ensures this runs as a client component if needed
   const { slug } = params;
   const filePath = path.join(process.cwd(), 'src/app/stories', `${slug}.md`);
   if (!fs.existsSync(filePath)) return notFound();
