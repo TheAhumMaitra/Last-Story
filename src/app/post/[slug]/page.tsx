@@ -10,7 +10,7 @@ export async function generateStaticParams() {
   return files.map((file) => ({ slug: file.replace(/\.md$/, '') }));
 }
 
-export default async function PostPage({ params }) {
+export default async function PostPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const filePath = path.join(process.cwd(), 'src/app/stories', `${slug}.md`);
   if (!fs.existsSync(filePath)) return notFound();
