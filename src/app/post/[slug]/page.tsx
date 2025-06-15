@@ -4,18 +4,14 @@ import { notFound } from 'next/navigation';
 import path from 'path';
 import ReactMarkdown from 'react-markdown';
 
-interface PostPageProps {
-  params: { slug: string };
-}
-
 export async function generateStaticParams() {
   const storiesDir = path.join(process.cwd(), 'src/app/stories');
   const files = fs.readdirSync(storiesDir);
   return files.map((file) => ({ slug: file.replace(/\.md$/, '') }));
 }
 
-export default async function PostPage(props: PostPageProps) {
-  const { slug } = props.params;
+export default async function PostPage({ params }: { params: { slug: string } }) {
+  const { slug } = params;
   const filePath = path.join(process.cwd(), 'src/app/stories', `${slug}.md`);
   if (!fs.existsSync(filePath)) return notFound();
   const fileContent = fs.readFileSync(filePath, 'utf8');
